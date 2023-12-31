@@ -1,0 +1,107 @@
+A Grocery Shop requires an application for Bill Calculation.The person generating the bill is supposed to enter the product details. Using theoutput tag, the total price is displayed.
+Concepts covered: Web Forms 2.0 input tag,output tag, placeholder attribute and required attribute
+The following are the screenshots of the Bill Calculator
+
+
+
+    
+
+
+
+Use the Label Name and theComponent Id as given. The Component Id can be given in any case (Upper case orLower case or Mixed case).All the necessary attributes for the Componentsshould be given.
+The Component Id should bespecified for each HTML Component. If the Component Id is not provided for anHTML component, marks will not be provided for that component.
+All Tags, Elements and Attributes should conform to HTML5 Standards.All the fields are mandatory.
+
+Provide the details as given in the table below. 
+
+Req. #
+
+Req. Name
+
+Req. Description
+
+1
+
+Design a Web page Bill Calculator with the specified fields.
+
+Label Name
+
+Component  Id
+
+(Specify it for the id attribute)
+
+Description
+
+Product Name
+
+productName
+
+To enter the product name.
+
+Design Constraints:
+
+Use type=text.
+
+ The text Product Name should appear by default.
+
+ It is mandatory.
+
+Product Price in Rs.
+
+price
+
+To enter the price of the product.
+
+Design Constraints:
+
+Use type=number.
+
+The text Product Price should appear by default.
+
+It is mandatory.
+
+Quantity
+
+qty
+
+To enter the product quantity.
+
+Design Constraints:
+
+Use type=number.
+
+ The text Enter quantity should appear by default.
+
+Assume that the min value is 1.
+
+It is mandatory.
+
+Total Price in Rs.
+
+totalprice
+
+To display the total price of the product. 
+
+Design Constraints:
+
+Use output tag.
+
+It is mandatory.
+
+Submit
+
+submit
+
+The input type submit must be used.
+
+ NOTE: The text highlighted in bold in the Description needs to be implemented in the code to complete the web page design.
+
+4
+
+form  Tag  with attribute onsubmit
+
+Make sure that the onsubmit attribute in the form tag invokes the JavaScript function like "return calculateTotalPrice()".
+
+Also ensure that the return false; statement is the last line of the JavaScript function calculateTotalPrice().
+
+
