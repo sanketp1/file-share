@@ -37,6 +37,44 @@ for View Feedback button id will be view
 
 for result div tag id will be result 
 
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Details</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Feedback Details</h2>
+    <textarea id="feedback" rows="4" cols="50"></textarea><br>
+    <button id="create" onclick="addFeedback()">Add Feedback</button>
+    <button id="view" onclick="displayFeedback()">View Feedback</button>
+    <div id="result"></div>
+</body>
+</html>
+
+script.js
+let feedbackArray = [];
+
+function addFeedback() {
+    const feedbackInput = document.getElementById("feedback").value;
+    if (feedbackInput.trim() !== "") {
+        feedbackArray.push(feedbackInput);
+        document.getElementById("feedback").value = "";
+        document.getElementById("result").innerHTML = "Successfully Added Feedback Details!";
+    }
+}
+
+function displayFeedback() {
+    let resultHtml = "<h2>Feedback Details</h2>";
+    feedbackArray.forEach(feedback => {
+        resultHtml += `<p>${feedback}</p>`;
+    });
+    document.getElementById("result").innerHTML = resultHtml;
+    feedbackArray = []; // Clear the array after displaying feedback
+}
 
 
 
