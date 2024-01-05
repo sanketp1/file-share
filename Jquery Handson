@@ -28,6 +28,44 @@ Do not use 'ES6' features.
 
 Sample Page:
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sample Page</title>
+</head>
+<body>
+
+    <div name="DAIntelligence">
+        <p>Distributed Artificial Intelligence(DAI)</p>
+    </div>
+
+    <div name="ASI_Intelligence">
+        <p>Artificial Super Intelligence (ASI)</p>
+    </div>
+
+    <div name="Intelligence-Amp">
+        <p>Intelligence Amplification (IA)</p>
+    </div>
+
+    <button id="changeColorBtn">Click to see the effect</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="divisions.js"></script>
+</body>
+</html>
 
 
 
+
+
+// divisions.js
+
+jQuery(document).ready(function() {
+    jQuery('#changeColorBtn').on('click', function() {
+        // Find all divisions with attribute name that ends with 'Intelligence' and set background color to yellow
+        jQuery('div[name$="Intelligence"]').css('background-color', 'yellow');
+    });
+});
